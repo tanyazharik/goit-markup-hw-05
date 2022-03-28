@@ -176,7 +176,6 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
 }
 .auto-nav-item {
   margin-left: 0;
@@ -185,6 +184,7 @@ p {
 
 .current {
   position: relative;
+  color: var(--accent-color);
 }
 
 .current::after {
@@ -197,8 +197,7 @@ p {
   border-radius: 2px;
   bottom: 0;
 }
-
-.nav-link .current {
+.link.current {
   color: var(--accent-color);
 }
 /* Hero */
@@ -557,6 +556,44 @@ ul {
   margin-top: 4px;
 }
 
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.card-thumb:hover {
+  opacity: 1;
+}
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+}
+
+.card:hover .card-overlay {
+  transform: translateY(0);
+}
+
+.overlay-text {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.64;
+  letter-spacing: 0.03em;
+  align-items: center;
+  justify-content: center;
+  padding: 63px 24px;
+
+  color: var(--title);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 /* Footer */
 
 .address {
