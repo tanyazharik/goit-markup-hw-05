@@ -258,7 +258,7 @@ p {
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
   visibility: visible;
 }
 .backdrop.is-hidden {
@@ -377,6 +377,10 @@ ul {
   letter-spacing: 0.03em;
 
   border: 1px solid transparent;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-project:hover,
@@ -436,7 +440,10 @@ ul {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
-}
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 .list-button > button:hover {
   color: var(--title);
 }
@@ -671,6 +678,8 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .secondary-link:hover,
 .secondary-link:focus {
@@ -731,7 +740,9 @@ ul {
 .social-item {
   margin-right: 10px;
   border-radius: 50%;
-}
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
 .social-item:last-child {
   margin-right: 0;
@@ -809,7 +820,9 @@ ul {
   fill: var(--title);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-}
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
 .social-link:hover,
 .social-link:focus {
@@ -837,7 +850,10 @@ ul {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-}
+
+  transition: 
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 .social-link-team:hover,
 .social-link-team:focus {
   fill: var(--title);
@@ -847,6 +863,8 @@ ul {
   width: 370px;
   border: 1px solid #eeeeee;
   border-top: none;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
